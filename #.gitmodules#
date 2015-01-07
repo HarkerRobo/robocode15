@@ -1,0 +1,3 @@
+[submodule "RobotCode2015/harkerrobolib"]
+	path = RobotCode2015/harkerrobolib
+	url = https://github.com/HarkerRobo/harkerrobolib
