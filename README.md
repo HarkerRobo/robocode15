@@ -50,3 +50,5 @@ git push origin my_new_code
 This pushes everything in that branch up. Then you can go back to your forked robocode15 github page and issue a pull request from there. Tell us what you want us to merge and what it does/fixes, and one of us will pick it up.
 
 That lets us know that there's something new from you that needs to be pulled in. We'll review it and get back to you about it if we have any questions. Otherwise, we'll integrate it and let you know when it's in!
+
+*inspired from the `joind.in` repository contributing guidelines*
