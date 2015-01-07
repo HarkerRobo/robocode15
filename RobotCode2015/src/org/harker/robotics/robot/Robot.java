@@ -2,6 +2,7 @@
 package org.harker.robotics.robot;
 
 import org.harker.robotics.commands.ExampleCommand;
+import org.harker.robotics.subsystems.Drivetrain;
 import org.harker.robotics.subsystems.ExampleSubsystem;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
@@ -18,9 +19,6 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
  */
 public class Robot extends IterativeRobot {
 
-	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
-	public static OI oi;
-
     Command autonomousCommand;
 
     /**
@@ -28,7 +26,8 @@ public class Robot extends IterativeRobot {
      * used for any initialization code.
      */
     public void robotInit() {
-		oi = new OI();
+		OI.initialize();
+		Drivetrain.initialize();
         // instantiate the command used for the autonomous period
         autonomousCommand = new ExampleCommand();
     }
