@@ -1,4 +1,4 @@
-package org.harker.robotics;
+package org.harker.robotics.robot;
 
 import org.harker.robotics.commands.ExampleCommand;
 

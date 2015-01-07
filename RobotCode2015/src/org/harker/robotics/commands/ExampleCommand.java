@@ -1,7 +1,7 @@
 
 package org.harker.robotics.commands;
 
-import org.harker.robotics.Robot;
+import org.harker.robotics.robot.Robot;
 
 import edu.wpi.first.wpilibj.command.Command;
 
