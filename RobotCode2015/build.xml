@@ -29,12 +29,6 @@
 		<arg value="master"/>
 	</exec>
 
-	<exec executable="git">
-	    <arg value="submodule"/>
-	    <arg value="update"/>
-	    <arg value="--init"/>
-	    <arg value="--recursive"/>
-	  </exec>
 	  <delete dir="src/org/harker/robotics/harkerrobolib"/>
 	  <copy todir="src">
 	    <fileset dir="harkerrobolib/src"/>
