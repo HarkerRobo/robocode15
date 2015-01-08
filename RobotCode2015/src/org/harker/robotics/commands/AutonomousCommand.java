@@ -1,18 +1,15 @@
-
 package org.harker.robotics.commands;
-
-import org.harker.robotics.robot.Robot;
 
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
  *
  */
-public class ExampleCommand extends Command {
+public class AutonomousCommand extends Command {
 
-    public ExampleCommand() {
+    public AutonomousCommand() {
         // Use requires() here to declare subsystem dependencies
-        requires(Robot.exampleSubsystem);
+        // eg. requires(chassis);
     }
 
     // Called just before this Command runs the first time

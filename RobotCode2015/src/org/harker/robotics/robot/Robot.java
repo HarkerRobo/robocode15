@@ -1,7 +1,7 @@
 
 package org.harker.robotics.robot;
 
-import org.harker.robotics.commands.ExampleCommand;
+import org.harker.robotics.commands.AutonomousCommand;
 import org.harker.robotics.subsystems.Drivetrain;
 import org.harker.robotics.subsystems.ExampleSubsystem;
 
@@ -29,7 +29,7 @@ public class Robot extends IterativeRobot {
 		OI.initialize();
 		Drivetrain.initialize();
         // instantiate the command used for the autonomous period
-        autonomousCommand = new ExampleCommand();
+        autonomousCommand = new AutonomousCommand();
     }
 	
 	public void disabledPeriodic() {

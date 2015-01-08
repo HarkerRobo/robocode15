@@ -1,9 +1,6 @@
 package org.harker.robotics.robot;
 
-import org.harker.robotics.commands.ExampleCommand;
 import org.harker.robotics.harkerrobolib.wrappers.GamepadWrapper;
-
-import edu.wpi.first.wpilibj.buttons.Button;
 
 /**
  * This class is the glue that binds the controls on the physical operator
