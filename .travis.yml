@@ -8,4 +8,4 @@ install:
   - (git clone git://github.com/HarkerRobo/sunspotfrcsdk && mv sunspotfrcsdk ~)
 
 script:
-  - ant -buildfile ./RobotCode2015/build.xml -D sunspot.home="`echo ~`"/sunspotfrcsdk
+  - ant -buildfile ./RobotCode2015/build.xml -Dsunspot.home="`echo ~`"/sunspotfrcsdk jar

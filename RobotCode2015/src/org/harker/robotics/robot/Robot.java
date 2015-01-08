@@ -3,7 +3,6 @@ package org.harker.robotics.robot;
 
 import org.harker.robotics.commands.AutonomousCommand;
 import org.harker.robotics.subsystems.Drivetrain;
-import org.harker.robotics.subsystems.ExampleSubsystem;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;

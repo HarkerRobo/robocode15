@@ -1,5 +1,6 @@
 package org.harker.robotics.robot;
 
+import org.harker.robotics.commands.ManualDriveCommand;
 import org.harker.robotics.harkerrobolib.wrappers.GamepadWrapper;
 
 /**
@@ -8,10 +9,12 @@ import org.harker.robotics.harkerrobolib.wrappers.GamepadWrapper;
  */
 public class OI {
     public GamepadWrapper gamepad1 = new GamepadWrapper(RobotMap.Gamepad.GAMEPAD1_PORT);
+    private ManualDriveCommand manualDrive;
+    
     private static OI oi;
     
     private OI() {
-    	
+    	manualDrive = new ManualDriveCommand();
     }
     
     public static OI getInstance() {
