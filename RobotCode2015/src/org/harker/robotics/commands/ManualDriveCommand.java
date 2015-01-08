@@ -6,7 +6,7 @@ import org.harker.robotics.subsystems.Drivetrain;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+ * Drives the robot using the controller's input. 
  */
 public class ManualDriveCommand extends Command {
 
