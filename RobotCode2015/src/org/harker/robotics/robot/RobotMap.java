@@ -31,14 +31,14 @@ public class RobotMap {
         public static final int RIGHT_ENC_CHANNEL_B = 4;
 
         //Gyro Channel
-        public static final int GYRO_CHANNEL = 5;
+        public static final int GYRO_CHANNEL = 0;
 
         //Shifter Channel
         public static final int SHIFTER_CHANNEL = 7;
     }
 
     public static class Gamepad {
-        public static final int GAMEPAD1_PORT = 1;
+        public static final int GAMEPAD1_PORT = 0;
         public static final int GAMEPAD2_PORT = 2;
     }
 }

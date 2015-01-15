@@ -8,13 +8,15 @@ import org.harker.robotics.harkerrobolib.wrappers.GamepadWrapper;
  * interface to the commands and command groups that allow control of the robot.
  */
 public class OI {
-    public GamepadWrapper gamepad1 = new GamepadWrapper(RobotMap.Gamepad.GAMEPAD1_PORT);
+    public static GamepadWrapper gamepad1 = new GamepadWrapper(RobotMap.Gamepad.GAMEPAD1_PORT);
     private ManualDriveCommand manualDrive;
     
     private static OI oi;
     
     private OI() {
     	manualDrive = new ManualDriveCommand();
+    	manualDrive.start();
+    	System.err.println("Manual Drive Command Initialized");
     }
     
     public static OI getInstance() {
@@ -23,6 +25,7 @@ public class OI {
     }
     
     public static void initialize() {
+    	System.err.println("OI Initialized");
     	if (oi == null)
     		oi = new OI();
     }
